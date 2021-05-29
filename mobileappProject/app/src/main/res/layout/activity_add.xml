@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context=".AddActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="379dp"
+        android:layout_height="78dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/Aphonelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Gadget name:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/Apricelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Price:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/Aphonelable"
+        app:layout_constraintTop_toTopOf="@id/Aphonelable" />
+
+    <TextView
+        android:id="@+id/Adeslable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Decription:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/Apricelable"
+        app:layout_constraintTop_toTopOf="@id/Apricelable" />
+
+    <EditText
+        android:id="@+id/Aphonename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="12dp"
+        android:hint="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/Aprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="44dp"
+        android:hint="TextView"
+        app:layout_constraintStart_toEndOf="@+id/Apricelable"
+        app:layout_constraintTop_toBottomOf="@+id/Aphonename" />
+
+    <EditText
+        android:id="@+id/Adescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        android:hint="TextView"
+        app:layout_constraintStart_toEndOf="@+id/Adeslable"
+        app:layout_constraintTop_toBottomOf="@+id/Aprice" />
+
+    <Button
+        android:id="@+id/Aaddbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Add Item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="251dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Adescription"
+        app:layout_constraintVertical_bias="0.893"
+        app:srcCompat="@drawable/phones" />
+
+    <TextView
+        android:id="@+id/titleAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Add Product"
+        android:textColor="@color/Title"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
